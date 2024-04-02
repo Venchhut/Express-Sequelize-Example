@@ -33,7 +33,7 @@ const createContact = asyncHandler(async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
-
+// *update contact
 const updateContact = asyncHandler(async (req, res) => {
   res.status(200).json({ message: `update contact for ${req.params.id}` });
 });
